@@ -17,3 +17,21 @@ const countdown = function count(n) {
 };
 
 countdown(5); // 5, 4, 3, 2, 1
+
+// 만약 재귀를 안쓴다면? → 반복문(for, while)으로 같은 동작 표현
+
+// for 문
+const countdownLoop = function (n) {
+  for (let i = n; i >= 1; i--) {
+    console.log(i);
+  }
+};
+countdownLoop(5); // 5, 4, 3, 2, 1
+
+// while 문
+// const countdownWhile = function (n) {
+//   while (n >= 1) {
+//     console.log(n);
+//     n--;
+//   }
+// };
